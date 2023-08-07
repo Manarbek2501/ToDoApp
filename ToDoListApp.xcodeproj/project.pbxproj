@@ -20,6 +20,13 @@
 		4B89C1F72A7E81A000A0B692 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C1F62A7E81A000A0B692 /* Model.swift */; };
 		4B89C1F92A7E9F2700A0B692 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C1F82A7E9F2700A0B692 /* AddButton.swift */; };
 		4B89C1FB2A7EBEB600A0B692 /* ToDoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C1FA2A7EBEB600A0B692 /* ToDoState.swift */; };
+		4B89C1FE2A7FAB8300A0B692 /* BottomSheetTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C1FD2A7FAB8300A0B692 /* BottomSheetTransitionDelegate.swift */; };
+		4B89C2002A7FABA300A0B692 /* BottomSheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C1FF2A7FABA300A0B692 /* BottomSheetTransition.swift */; };
+		4B89C2022A7FABBD00A0B692 /* BottomSheetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C2012A7FABBD00A0B692 /* BottomSheetConfiguration.swift */; };
+		4B89C2042A7FABD700A0B692 /* BottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C2032A7FABD700A0B692 /* BottomSheetPresentationController.swift */; };
+		4B89C2062A7FABF500A0B692 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C2052A7FABF500A0B692 /* BottomSheetView.swift */; };
+		4B89C2082A7FD46000A0B692 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C2072A7FD46000A0B692 /* DetailViewController.swift */; };
+		4B89C20A2A7FD6D500A0B692 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89C2092A7FD6D500A0B692 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		4B89C1F62A7E81A000A0B692 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4B89C1F82A7E9F2700A0B692 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		4B89C1FA2A7EBEB600A0B692 /* ToDoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoState.swift; sourceTree = "<group>"; };
+		4B89C1FD2A7FAB8300A0B692 /* BottomSheetTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTransitionDelegate.swift; sourceTree = "<group>"; };
+		4B89C1FF2A7FABA300A0B692 /* BottomSheetTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTransition.swift; sourceTree = "<group>"; };
+		4B89C2012A7FABBD00A0B692 /* BottomSheetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetConfiguration.swift; sourceTree = "<group>"; };
+		4B89C2032A7FABD700A0B692 /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
+		4B89C2052A7FABF500A0B692 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		4B89C2072A7FD46000A0B692 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4B89C2092A7FD6D500A0B692 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B709949CE07DCF02E2F9C6A4 /* Pods-ToDoListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListApp.release.xcconfig"; path = "Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA4026A8B6F08FB0BE967FB7 /* Pods_ToDoListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,9 +109,11 @@
 		4B89C1E92A7E748B00A0B692 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				4B89C1FC2A7FAB6D00A0B692 /* BottomSheet */,
 				4B89C1EA2A7E749C00A0B692 /* Builder.swift */,
 				4B89C1F42A7E7EF300A0B692 /* AlertManager.swift */,
 				4B89C1FA2A7EBEB600A0B692 /* ToDoState.swift */,
+				4B89C2092A7FD6D500A0B692 /* CustomTextField.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -144,6 +160,7 @@
 			children = (
 				4B89C1F22A7E785B00A0B692 /* ToDoTableViewCell.swift */,
 				4B89C1F82A7E9F2700A0B692 /* AddButton.swift */,
+				4B89C2052A7FABF500A0B692 /* BottomSheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,8 +169,20 @@
 			isa = PBXGroup;
 			children = (
 				4B89C1D92A7E3FF600A0B692 /* ViewController.swift */,
+				4B89C2072A7FD46000A0B692 /* DetailViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4B89C1FC2A7FAB6D00A0B692 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				4B89C1FD2A7FAB8300A0B692 /* BottomSheetTransitionDelegate.swift */,
+				4B89C1FF2A7FABA300A0B692 /* BottomSheetTransition.swift */,
+				4B89C2012A7FABBD00A0B692 /* BottomSheetConfiguration.swift */,
+				4B89C2032A7FABD700A0B692 /* BottomSheetPresentationController.swift */,
+			);
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 		AD008B04176290302C5A843F /* Pods */ = {
@@ -284,9 +313,16 @@
 				4B89C1FB2A7EBEB600A0B692 /* ToDoState.swift in Sources */,
 				4B89C1DA2A7E3FF600A0B692 /* ViewController.swift in Sources */,
 				4B89C1D62A7E3FF600A0B692 /* AppDelegate.swift in Sources */,
+				4B89C20A2A7FD6D500A0B692 /* CustomTextField.swift in Sources */,
 				4B89C1F52A7E7EF300A0B692 /* AlertManager.swift in Sources */,
+				4B89C2042A7FABD700A0B692 /* BottomSheetPresentationController.swift in Sources */,
 				4B89C1D82A7E3FF600A0B692 /* SceneDelegate.swift in Sources */,
+				4B89C1FE2A7FAB8300A0B692 /* BottomSheetTransitionDelegate.swift in Sources */,
+				4B89C2022A7FABBD00A0B692 /* BottomSheetConfiguration.swift in Sources */,
+				4B89C2002A7FABA300A0B692 /* BottomSheetTransition.swift in Sources */,
 				4B89C1EB2A7E749C00A0B692 /* Builder.swift in Sources */,
+				4B89C2062A7FABF500A0B692 /* BottomSheetView.swift in Sources */,
+				4B89C2082A7FD46000A0B692 /* DetailViewController.swift in Sources */,
 				4B89C1F32A7E785B00A0B692 /* ToDoTableViewCell.swift in Sources */,
 				4B89C1F92A7E9F2700A0B692 /* AddButton.swift in Sources */,
 			);

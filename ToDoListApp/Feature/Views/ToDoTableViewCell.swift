@@ -8,7 +8,9 @@
 import UIKit
 import SnapKit
 
+
 class ToDoTableViewCell: UITableViewCell {
+    
     //MARK: - Variables
     let label: UILabel = build {
         $0.numberOfLines = 0
@@ -16,8 +18,11 @@ class ToDoTableViewCell: UITableViewCell {
     }
     let image: UIImageView = build {
         $0.tintColor = .black
+        $0.isUserInteractionEnabled = true
     }
     var model: Model?
+    var didTapDone: (() -> Void?)?
+    
     //MARK: - Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -29,10 +34,9 @@ class ToDoTableViewCell: UITableViewCell {
     }
     
     //MARK: - SetupUI and ConfigureUI
-    func configureCell(model: Model) {
-        self.model = model
-    }
     private func setupUI() {
+        
+        image.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(iconDidTapped)))
         [label, image].forEach {
             contentView.addSubview($0)
         }
@@ -44,5 +48,9 @@ class ToDoTableViewCell: UITableViewCell {
             $0.centerY.equalToSuperview()
             $0.right.equalToSuperview().offset(-16)
         }
+    }
+    //MARK: - Selectors
+    @objc private func iconDidTapped() {
+        didTapDone?()
     }
 }
